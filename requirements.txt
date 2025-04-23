@@ -1,0 +1,12 @@
+streamlit>=1.28.0
+pandas>=2.0.0
+requests>=2.31.0
+plotly>=5.18.0
+openai>=0.28.0,<1.0.0
+keboola-streamlit
+pillow>=10.0.0
+matplotlib>=3.7.0
+wordcloud>=1.9.0
+seaborn>=0.13.0
+numpy>=1.24.0
+python-dotenv>=1.0.0 
