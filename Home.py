@@ -99,7 +99,7 @@ and actionable recommendations.
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('data/in/tables/CALL_TRANSCRIPT_LLM_RESPONSE_EXPANDED.csv')
+        df = pd.read_csv('/data/in/tables/CALL_TRANSCRIPT_LLM_RESPONSE_EXPANDED.csv')
         
         # Clean and prepare the data
         # Convert date columns
@@ -187,7 +187,7 @@ if 'error' in df.columns:
 try:
     from PIL import Image
     
-    logo_path = "data/in/files/kbl.png"
+    logo_path = "/data/in/files/kbl.png"
     if os.path.exists(logo_path):
         logo = Image.open(logo_path)
         st.sidebar.image(logo, use_container_width=True)
