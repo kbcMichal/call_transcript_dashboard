@@ -187,7 +187,7 @@ if 'error' in df.columns:
 try:
     from PIL import Image
     
-    logo_path = "/data/in/files/kbl.png"
+    logo_path = "/data/in/files/14727883_kbl.png"
     if os.path.exists(logo_path):
         logo = Image.open(logo_path)
         st.sidebar.image(logo, use_container_width=True)
