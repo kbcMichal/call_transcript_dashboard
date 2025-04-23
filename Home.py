@@ -87,14 +87,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Title and introduction
-st.markdown("<h1 class='main-header'>📞 Call Transcript Analysis Dashboard</h1>", unsafe_allow_html=True)
-st.markdown("""
-This dashboard provides insights from analyzed call transcripts to help CRM teams improve customer interactions 
-and drive better business outcomes. The analysis includes sentiment tracking, call categorization, compliance monitoring,
-and actionable recommendations.
-""")
-
 # Load data function
 @st.cache_data
 def load_data():
@@ -954,12 +946,3 @@ with tab4:
                     st.text(transcript_row['TRANSCRIPT'])
             else:
                 st.warning("No transcript available for this client.")
-
-# Footer with additional information
-st.markdown("---")
-st.markdown("""
-<div style="text-align: center; color: #666;">
-    <p>CRM Call Analysis Dashboard | Data based on CALL_TRANSCRIPT_LLM_RESPONSE_EXPANDED table</p>
-    <p>❗ For any issues with this dashboard, please contact the Data Science team</p>
-</div>
-""", unsafe_allow_html=True) 
